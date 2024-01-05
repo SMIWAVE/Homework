@@ -15,11 +15,11 @@ public class Zhivotnoe {
     }
 
     public void swim(int dlina){
-        System.out.println(getName() + " проплыл " + dlina + " m.");
+        System.out.println(getName() + " РїСЂРѕРїР»С‹Р» " + dlina + " m.");
     }
 
     public void run(int dlina){
-        System.out.println(getName() + " пробежал " + dlina + " m.");
+        System.out.println(getName() + " РїСЂРѕР±РµР¶Р°Р» " + dlina + " m.");
 
     }
 }
