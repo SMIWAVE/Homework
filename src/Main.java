@@ -3,12 +3,12 @@ public class Main {
         int sum;
         String[][] MyArray = new String[][]{
                 {"11", "4", "4", "4"},
-                {"5", "6", "3", "8"},
+                {"5", "4", "3", "8"},
                 {"3", "5", "1", "5"},
                 {"4", "1", "9", "2"},
         };
         sum = MyArraySum(MyArray);
-        System.out.println("Сумма всех элементов массива " + sum);
+        System.out.println("РЎСѓРјРјР° РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° " + sum);
     }
 
     public static int MyArraySum(String[][] MyArray) throws MyArrayDataException,MyArraySizeException {
@@ -16,7 +16,7 @@ public class Main {
         int y = 0, i = 0;
 
         if (MyArray.length * MyArray[0].length > 16) {
-            throw new MyArraySizeException("Массив слишком большой");
+            throw new MyArraySizeException("РњР°СЃСЃРёРІ СЃР»РёС€РєРѕРј Р±РѕР»СЊС€РѕР№");
         }
 
         try {
@@ -27,7 +27,7 @@ public class Main {
                 y++;
             }
         } catch (NumberFormatException e) {
-            throw new MyArrayDataException("Символ либо строка вместо цифры" + "[" + y +"][" + i + "]");
+            throw new MyArrayDataException("РЎРёРјРІРѕР» Р»РёР±Рѕ СЃС‚СЂРѕРєР° РІРјРµСЃС‚Рѕ С†РёС„СЂС‹" + "[" + y +"][" + i + "]");
         }
         return sum;
     }
