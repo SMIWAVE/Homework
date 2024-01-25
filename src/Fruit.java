@@ -14,6 +14,4 @@ public class Fruit<T> {
     public int getQuantity() {
         return quantity;
     }
-
-
 }
