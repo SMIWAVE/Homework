@@ -10,7 +10,7 @@ public class FactorialTest {
     Random random = new Random(100);
 
     @Test
-    @DisplayName("Êîíñòðóêòîð ðàáîòàåò")
+    @DisplayName("ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚")
     public void factorialWork(){
         int randomNumber = Math.abs(random.nextInt(100));
         Factorial facTest = new Factorial(randomNumber);
@@ -18,14 +18,14 @@ public class FactorialTest {
     }
 
     @Test
-    @DisplayName("Ôàêòîðèàë íóëÿ")
+    @DisplayName("Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ð½ÑƒÐ»Ñ")
     public void factorialZero(){
         Factorial facTest = new Factorial(0);
         assertTrue(facTest.getFactor() == 1);
     }
 
     @Test
-    @DisplayName("Ôàêòîðèàë äëÿ îòðèöàòåëüíîãî ÷èñëà")
+    @DisplayName("Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ð´Ð»Ñ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°")
     public void factorialNegative(){
         assertThrows(ArithmeticException.class, () -> {
             Factorial facTest = new Factorial(-2);

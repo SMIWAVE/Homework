@@ -9,7 +9,7 @@ public class Factorial {
 
     public Factorial(int number) throws ArithmeticException {
         if (number < 0) {
-            throw new ArithmeticException("Ôàêòîðèàë îïðåäåëåí òîëüêî äëÿ íåîòðèöàòåëüíûõ ÷èñåë");
+            throw new ArithmeticException("Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð´Ð»Ñ Ð½ÐµÐ¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»");
         }
 
         factor = 1;
